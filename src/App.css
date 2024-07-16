@@ -7,7 +7,7 @@ body {
   text-align: center;
 }
 
-header, footer {
+footer {
   background-color: #282c34;
   padding: 20px;
   color: white;
@@ -23,4 +23,63 @@ main {
   main {
     padding: 20px;
   }
+}
+
+.bullets{
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.background_img {
+  display:flex;justify-content:center;align-items:center;
+  background-image: url('images/placeHolderHome.jpg'); /* Adjust path as necessary */
+  background-size:contain; 
+  background-position: center; /* Centers the image */
+  height: 300px; /* Adjust height as necessary */
+  color: white; /* Ensures text is readable */
+  text-align: center; /* Centers text horizontally */
+}
+/* AddressForm.css */
+.address-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light grey background */
+}
+
+.address-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Space between input and button */
+  background-color: #ffffff; /* White background for the form */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.address-form input {
+  width: 300px; /* Fixed width for input */
+  padding: 10px;
+  border: 1px solid #cccccc; /* Light grey border */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.address-form button {
+  width: 100px; /* Fixed width for button */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Blue background */
+  color: #ffffff; /* White text */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.address-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }

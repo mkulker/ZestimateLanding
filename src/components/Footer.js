@@ -1,10 +1,10 @@
 import React from 'react';
 // import './Footer.css';
 
-function Footer() {
+function Footer({address}) {
   return (
     <footer>
-      <p>&copy; 2024 My Website</p>
+      <h2>{address}</h2>
     </footer>
   );
 }
