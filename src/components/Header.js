@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = ({ imgSrc,addres }) => {
+const Header = ({ imgSrc,address }) => {
     const backgroundStyles = {
         display: 'flex',
         justifyContent: 'center',
@@ -16,7 +16,7 @@ const Header = ({ imgSrc,addres }) => {
     return (
         <header>
             <div style={backgroundStyles}>
-                <h1>YOUR NEIGHBOR JUST SOLD {addres} OVER LIST PRICE!</h1>
+                <h1>YOUR NEIGHBOR JUST SOLD {address} OVER LIST PRICE!</h1>
             </div>
         </header>
     );

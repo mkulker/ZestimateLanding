@@ -9,6 +9,10 @@ import AddressForm from './components/AddressForm';
 
 const App = () => {
   const [imgSrc, setImgSrc] = useState(placeHolderHome);
+  const [zestAddress, setZestAddress] = useState(null); // Initialize zestAddress state
+  const [zestimate, setZestimate] = useState(null); // Initialize zestAddress state
+  const [price, setPrice] = useState(null); // Initialize zestAddress state
+
 
   const fetchZestimate = async (address) => {
     const encodedAddress = encodeURIComponent(address);
@@ -27,6 +31,9 @@ const App = () => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const result = await response.json();
+      setZestAddress(result.address.streetAddress); // Update zestAddress state
+      setZestimate(result.address.zestimate)
+      setPrice(result.price)
       setImgSrc(result.imgSrc || placeHolderHome); // Fallback to placeHolderHome if result.imgSrc is undefined
       console.log(result);
     } catch (error) {
@@ -41,15 +48,15 @@ const App = () => {
 
     useEffect(() => {
       if (address) {
-        fetchZestimate(address);
+        // fetchZestimate(address);
       }
     }, [address]);
 
     return (
       <div className="App">
-        <Header imgSrc={imgSrc} addres={address}/>
+        <Header imgSrc={imgSrc} address={zestAddress} />
         <MainB />
-        <Footer address={address} />
+        <Footer address={zestAddress} />
       </div>
     );
   };
