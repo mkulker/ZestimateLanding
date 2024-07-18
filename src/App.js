@@ -48,7 +48,7 @@ const App = () => {
 
     useEffect(() => {
       if (address) {
-        // fetchZestimate(address);
+        fetchZestimate(address);
       }
     }, [address]);
 
