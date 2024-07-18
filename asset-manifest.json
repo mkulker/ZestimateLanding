@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ZestimateLanding/static/css/main.b6f79ec2.css",
-    "main.js": "/ZestimateLanding/static/js/main.8f0a1471.js",
+    "main.js": "/ZestimateLanding/static/js/main.1bc0020d.js",
     "static/js/453.48378c4c.chunk.js": "/ZestimateLanding/static/js/453.48378c4c.chunk.js",
     "static/media/placeHolderHome.jpg": "/ZestimateLanding/static/media/placeHolderHome.c48d619385af7edc7c81.jpg",
     "index.html": "/ZestimateLanding/index.html",
     "main.b6f79ec2.css.map": "/ZestimateLanding/static/css/main.b6f79ec2.css.map",
-    "main.8f0a1471.js.map": "/ZestimateLanding/static/js/main.8f0a1471.js.map",
+    "main.1bc0020d.js.map": "/ZestimateLanding/static/js/main.1bc0020d.js.map",
     "453.48378c4c.chunk.js.map": "/ZestimateLanding/static/js/453.48378c4c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b6f79ec2.css",
-    "static/js/main.8f0a1471.js"
+    "static/js/main.1bc0020d.js"
   ]
 }
