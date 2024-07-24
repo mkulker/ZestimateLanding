@@ -4,14 +4,15 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MainB from './components/MainB';
+import FindOut from './components/FindOut'
 import placeHolderHome from './images/placeHolderHome.jpg';
 import AddressForm from './components/AddressForm';
 
 const App = () => {
   const [imgSrc, setImgSrc] = useState(placeHolderHome);
-  const [zestAddress, setZestAddress] = useState(null); // Initialize zestAddress state
-  const [zestimate, setZestimate] = useState(null); // Initialize zestAddress state
-  const [price, setPrice] = useState(null); // Initialize zestAddress state
+  const [zestAddress, setZestAddress] = useState('test home'); // Initialize zestAddress state
+  const [zestimate, setZestimate] = useState(1300000); // Initialize zestAddress state
+  const [price, setPrice] = useState(1000000); // Initialize zestAddress state
 
 
   const fetchZestimate = async (address) => {
@@ -48,14 +49,15 @@ const App = () => {
 
     useEffect(() => {
       if (address) {
-        fetchZestimate(address);
+        // fetchZestimate(address);
       }
     }, [address]);
 
     return (
       <div className="App">
-        <Header imgSrc={imgSrc} address={zestAddress} />
+        <Header imgSrc={imgSrc} address={zestAddress} price={price}/>
         <MainB />
+        <FindOut/>
         <Footer address={zestAddress} />
       </div>
     );

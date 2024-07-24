@@ -83,3 +83,51 @@ main {
 .address-form button:hover {
   background-color: #0056b3; /* Darker blue on hover */
 }
+.find-out {
+  text-align: center;
+  padding: 20px;
+}
+
+.find-out h2 {
+  margin-bottom: 20px;
+}
+
+.find-out form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find-out input {
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.find-out button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.find-out button.active {
+  background-color: #4CAF50;
+}
+
+.find-out button:disabled {
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
